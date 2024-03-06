@@ -5,51 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Freedom Banner</title>
     <style>
-        .banner {
-            background-color: #3498db; /* Adjust background color as needed */
-            padding: 20px;
-        }
-
-        .content {
-            display: flex;
-            align-items: center;
-        }
-
-        .content img {
-            width: 300px; /* Adjust image width as needed */
-            height: auto;
-            margin-right: 20px;
-        }
-
-        .text {
-            color: #fff; /* Text color */
-        }
-
-        .text h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .text p {
-            font-size: 1.2em;
-            line-height: 1.6; /* Adjust line spacing */
-            margin-bottom: 15px; /* Increase margin between paragraphs */
-        }
+        /* Your CSS styles here */
     </style>
 </head>
 <body>
     <div class="banner">
         <div class="content">
             <img src="image/WhatsApp Image 2024-03-06 at 21.02.50.jpg" alt="Financial Freedom Image">
-            </div>
             <div class="text">
                 <h1>Finlingo: Your AI-powered Guide to Financial Freedom in Africa</h1>
                 <p>Africa's fintech revolution is booming, offering financial inclusion to millions previously left behind. Yet, a critical gap in financial literacy remains, hindering individuals from fully harnessing its potential.</p>
                 <p>Finlingo steps in as your innovative AI-powered companion. We bridge the knowledge gap with a user-friendly platform and mobile app, available in multiple languages. Personalized learning journeys and clear explanations empower you to make informed financial decisions and navigate the fintech landscape with confidence.</p>
                 <p>Start your free trial today and unlock a brighter financial future!</p>
-                <!-- Add any additional content or elements here -->
+                <button class="launch" onclick="window.location.href='your-free-trial-page.html'">Launch</button>
+                <!-- Replace 'your-free-trial-page.html' with the actual URL of your free trial page -->
+            </div>
         </div>
-        <script type="text/javascript">
+    </div>
+
+    <!-- Chatbot script -->
+    <script type="text/javascript">
         (function(d, t) {
             var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
             v.onload = function() {
@@ -59,12 +34,11 @@
                     versionID: 'production'
                 });
             }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-            v.type = "text/javascript";
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
             s.parentNode.insertBefore(v, s);
         })(document, 'script');
     </script>
-    </div>
 </body>
 </html>
 
