@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Voiceflow Chatbot</title>
     <style>
@@ -14,6 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
         .content {
             text-align: center;
@@ -27,14 +28,23 @@
         p {
             font-size: 1.2em;
         }
+        img {
+            width: 200px; /* Adjust image width as needed */
+            height: auto;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-        <div class="content">
-        <h1>Welcome to My Chatbot</h1>
-        <p>This is the future of conversational interfaces.</p>
+    <!-- Include Image, Headline, and Subheading -->
+    <div class="content">
+        <img src="image/WhatsApp Image 2024-03-06 at 21.02.50" alt="Financial Freedom Image">
+        <h1>Unlocking Financial Freedom with Finlingo: Your AI-powered Financial Guide</h1>
+        <p>Learn, Grow, and Thrive in Africa's Booming Fintech Landscape</p>
         <!-- Add any additional content or elements here -->
     </div>
+
+    <!-- Include Voiceflow chatbot script -->
     <script type="text/javascript">
         (function(d, t) {
             var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -45,12 +55,11 @@
                     versionID: 'production'
                 });
             }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-            v.type = "text/javascript";
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
             s.parentNode.insertBefore(v, s);
         })(document, 'script');
     </script>
-
-    <!-- Add any additional JavaScript or script tags here -->
 </body>
 </html>
+
