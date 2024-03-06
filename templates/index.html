@@ -3,63 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Voiceflow Chatbot</title>
+    <title>Financial Freedom Banner</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom right, #3498db, #2ecc71); /* Adjust gradient colors as needed */
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .content {
-            text-align: center;
-            color: #fff;
+        .banner {
+            background-color: #3498db; /* Adjust background color as needed */
             padding: 20px;
         }
-        h1 {
+
+        .content {
+            display: flex;
+            align-items: center;
+        }
+
+        .content img {
+            width: 300px; /* Adjust image width as needed */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .text {
+            color: #fff; /* Text color */
+        }
+
+        .text h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
         }
-        p {
+
+        .text p {
             font-size: 1.2em;
-        }
-        img {
-            width: 200px; /* Adjust image width as needed */
-            height: auto;
-            margin-bottom: 20px;
+            line-height: 1.6; /* Adjust line spacing */
+            margin-bottom: 15px; /* Increase margin between paragraphs */
         }
     </style>
 </head>
 <body>
-    <!-- Include Image, Headline, and Subheading -->
-    <div class="content">
-        <img src="image/WhatsApp Image 2024-03-06 at 21.02.50.jpeg" alt="Financial Freedom Image">
-        <h1>Unlocking Financial Freedom with Finlingo: Your AI-powered Financial Guide</h1>
-        <p>Learn, Grow, and Thrive in Africa's Booming Fintech Landscape</p>
-        <!-- Add any additional content or elements here -->
+    <div class="banner">
+        <div class="content">
+            <img src="image/WhatsApp Image 2024-03-06 at 21.02.50.jpg" alt="Financial Freedom Image">
+            <div class="text">
+                <h1>Finlingo: Your AI-powered Guide to Financial Freedom in Africa</h1>
+                <p>Africa's fintech revolution is booming, offering financial inclusion to millions previously left behind. Yet, a critical gap in financial literacy remains, hindering individuals from fully harnessing its potential.</p>
+                <p>Finlingo steps in as your innovative AI-powered companion. We bridge the knowledge gap with a user-friendly platform and mobile app, available in multiple languages. Personalized learning journeys and clear explanations empower you to make informed financial decisions and navigate the fintech landscape with confidence.</p>
+                <p>Start your free trial today and unlock a brighter financial future!</p>
+                <!-- Add any additional content or elements here -->
+            </div>
+        </div>
     </div>
-
-    <!-- Include Voiceflow chatbot script -->
-    <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-                window.voiceflow.chat.load({
-                    verify: { projectID: '65e88a02905ec742d67e77d2' }, // Replace with your actual project ID
-                    url: 'https://general-runtime.voiceflow.com',
-                    versionID: 'production'
-                });
-            }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
-            v.type = "text/javascript"; 
-            s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-    </script>
 </body>
 </html>
 
