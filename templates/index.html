@@ -1,78 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Financial Freedom Banner</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            /* add image and gradient */
-            background-image:  linear-gradient(#32399cd6,#0d1036be),url("image/fintechimage.png");
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .content {
-            text-align: center;
-            color: #fff;
-            padding: 100px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        .text{
-            background-image: linear-gradient(#0d1036be,#0d1036be);
-            padding-top: 3%;
-            padding-bottom: 5%;
-            padding-left: 10%;
-            padding-right: 10%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 3%;
-            justify-content: center;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        /* add image and gradient */
+        background-image: linear-gradient(#32399cd6, #0d1036be),
+          url("image/fintechimage.png");
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        text-align: center;
+        color: #fff;
+        padding: 100px;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .text {
+        background-image: linear-gradient(#0d1036be, #0d1036be);
+        padding-top: 3%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        justify-content: center;
+      }
+      .brand {
+        font-size: 4em;
+        font-family: "Source Code Pro", monospace;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style:italic;
+
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="banner">
-        <div class="content">
-            <img src="IwazoLab.png" width= "300px" alt="IwazoLab Logo">
-            <div class="text">
-                <h1>Finlingo: AI for Inclusive Financial Education in Africa</h1>
-                <p>Africa's fintech revolution is booming, offering financial inclusion to millions previously left behind. Yet, a critical gap in financial literacy remains, hindering individuals from fully harnessing its potential.</p>
-                <p>Finlingo steps in as your innovative AI-powered companion. We bridge the knowledge gap with a user-friendly platform and mobile app, available in multiple languages. Personalized learning journeys and clear explanations empower you to make informed financial decisions and navigate the fintech landscape with confidence.</p>
-                <p>Start your free trial today and unlock a brighter financial future!</p>
-                <!--<button class="launch" onclick="window.location.href='your-free-trial-page.html'">Launch</button> -->
-                <!-- Replace 'your-free-trial-page.html' with the actual URL of your free trial page -->
-            </div>
+      <div class="content">
+        <h1 class="brand">Finlingo</h1>
+        <div class="text">
+          <h1>AI for Inclusive Financial Education in Africa</h1>
+          <p>
+            Africa's fintech revolution is booming, offering financial inclusion
+            to millions previously left behind. Yet, a critical gap in financial
+            literacy remains, hindering individuals from fully harnessing its
+            potential.
+          </p>
+          <p>
+            Finlingo steps in as your innovative AI-powered companion. We bridge
+            the knowledge gap with a user-friendly platform and mobile app,
+            available in multiple languages. Personalized learning journeys and
+            clear explanations empower you to make informed financial decisions
+            and navigate the fintech landscape with confidence.
+          </p>
+          <p>
+            Start your free trial today and unlock a brighter financial future!
+          </p>
+          <!--<button class="launch" onclick="window.location.href='your-free-trial-page.html'">Launch</button> -->
+          <!-- Replace 'your-free-trial-page.html' with the actual URL of your free trial page -->
         </div>
+      </div>
     </div>
 
     <!-- Chatbot script -->
     <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-                window.voiceflow.chat.load({
-                    verify: { projectID: '65e88a02905ec742d67e77d2' }, // Replace with your actual project ID
-                    url: 'https://general-runtime.voiceflow.com',
-                    versionID: 'production'
-                });
-            }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
-            v.type = "text/javascript"; 
-            s.parentNode.insertBefore(v, s);
-        })(document, 'script');
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: "65e88a02905ec742d67e77d2" }, // Replace with your actual project ID
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+          });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
     </script>
-</body>
+  </body>
 </html>
-
